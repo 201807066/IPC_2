@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="othello.WebForm1" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="othello.WebForm1" %>
 
 <!DOCTYPE html>
 <html>
@@ -22,7 +22,9 @@
                 <asp:TextBox ID="txt_user" runat="server" placeholder="Nombre de usuario" CssClass="input-field"></asp:TextBox>
 				<asp:TextBox ID="txt_contraseña" runat="server" placeholder="Contraseña" CssClass="input-field" TextMode="Password"></asp:TextBox>
 				<br />
-                <asp:Button ID="btn_inicio" runat="server" CssClass="submit-btn" Text="Iniciar sesión" />
+					<asp:Label ID="lb_mensaje" runat="server"></asp:Label>
+                <asp:Button ID="btn_inicio" runat="server" CssClass="submit-btn" Text="Iniciar sesión" OnClick="btn_inicio_Click" />
+                
             </form>
 
 			<div class="connect">

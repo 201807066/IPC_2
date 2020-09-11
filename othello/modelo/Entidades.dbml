@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="db_othello" Class="EntidadesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=LAPTOP-91JLOEFB\SQLEXPRESS;Initial Catalog=db_othello;Integrated Security=True" SettingsObjectName="modelo.Properties.Settings" SettingsPropertyName="db_othelloConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Ficha" Member="Ficha">
+    <Type Name="Ficha">
+      <Column Name="Id_ficha" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="No_fila" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="No_columna" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Ficha_Tablero_Ficha" Member="Tablero_Ficha" ThisKey="Id_ficha" OtherKey="Id_ficha" Type="Tablero_Ficha" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Jugador" Member="Jugador">
+    <Type Name="Jugador">
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nombre" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Apellido" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Contraseña" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Fecha_nac" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="Correo" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="Pais" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Association Name="Jugador_Partida_Jugador" Member="Partida_Jugador" ThisKey="Usuario" OtherKey="Usuario" Type="Partida_Jugador" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Partida" Member="Partida">
+    <Type Name="Partida">
+      <Column Name="Id_partida" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_tipo" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_tablero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Partida_Partida_Jugador" Member="Partida_Jugador" ThisKey="Id_partida" OtherKey="Id_partida" Type="Partida_Jugador" />
+      <Association Name="Tablero_Partida" Member="Tablero" ThisKey="Id_tablero" OtherKey="Id_tablero" Type="Tablero" IsForeignKey="true" />
+      <Association Name="Tipo_partida_Partida" Member="Tipo_partida" ThisKey="Id_tipo" OtherKey="Id_tipo" Type="Tipo_partida" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Partida_Jugador" Member="Partida_Jugador">
+    <Type Name="Partida_Jugador">
+      <Column Name="Id_partida_jugador" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_partida" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Association Name="Partida_Partida_Jugador" Member="Partida" ThisKey="Id_partida" OtherKey="Id_partida" Type="Partida" IsForeignKey="true" />
+      <Association Name="Jugador_Partida_Jugador" Member="Jugador" ThisKey="Usuario" OtherKey="Usuario" Type="Jugador" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tablero" Member="Tablero">
+    <Type Name="Tablero">
+      <Column Name="Id_tablero" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="No_fichas_blancas" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="No_fichas_negras" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Tablero_Partida" Member="Partida" ThisKey="Id_tablero" OtherKey="Id_tablero" Type="Partida" />
+      <Association Name="Tablero_Tablero_Ficha" Member="Tablero_Ficha" ThisKey="Id_tablero" OtherKey="Id_tablero" Type="Tablero_Ficha" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tablero_Ficha" Member="Tablero_Ficha">
+    <Type Name="Tablero_Ficha">
+      <Column Name="Id_partida_jugador" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Id_tablero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Id_ficha" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Ficha_Tablero_Ficha" Member="Ficha" ThisKey="Id_ficha" OtherKey="Id_ficha" Type="Ficha" IsForeignKey="true" />
+      <Association Name="Tablero_Tablero_Ficha" Member="Tablero" ThisKey="Id_tablero" OtherKey="Id_tablero" Type="Tablero" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo_partida" Member="Tipo_partida">
+    <Type Name="Tipo_partida">
+      <Column Name="Id_tipo" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="Tipo_partida_Partida" Member="Partida" ThisKey="Id_tipo" OtherKey="Id_tipo" Type="Partida" />
+    </Type>
+  </Table>
+</Database>

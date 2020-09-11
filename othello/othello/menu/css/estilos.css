@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 13px;
+}
+
+
+.centro{
+	width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 10px;
+}
+
+.main{
+	height: 100px;
+}
+
+body{
+	background-image: url(../img/fondo.jpg);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #00695c;
+}
+
+.submit-btn {
+	padding: 10px 20px;
+	cursor: pointer;
+	display: ruby;
+	margin: auto;
+	background: linear-gradient(to right, rgba(0, 150, 136, 0.7), rgba(0, 188, 212, 0.7));
+	border: 0px;
+	outline: none;
+	border-radius: 30px;
+
+}
+
+.uno{
+	background: url(../img/uno.png) center;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer; 
+	padding: 150px 150px;	
+	transition: .5s case;
+}
+
+.dos{
+	background: url(../img/dos.png) center;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer; 
+	padding: 150px 150px;	
+	transition: .5s case;
+}
+
+.torneo{
+	background: url(../img/torneo.png) center;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer; 
+	padding: 150px 150px;	
+	transition: .5s case;
+}
+
+.cargar{
+	background: url(../img/cargar.png) center;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer; 
+	padding: 150px 150px;
+	transition: .5s case;	
+}
+
+.reporte{
+	background: url(../img/reporte.png) center;
+	background-size: 100% 100%;
+	border:none;
+	cursor: pointer; 
+	padding: 150px 150px;	
+	transition: .5s case;
+}
+
+.uno:focus{
+	outline: 0;
+}
+.uno:hover{
+	padding: 140px 150px;
+}
+
+.dos:focus{
+	outline: 0;
+}
+.dos:hover{
+	padding: 140px 150px;
+}
+
+.torneo:focus{
+	outline: 0;
+}
+.torneo:hover{
+	padding: 140px 150px;
+}
+
+.cargar:focus{
+	outline: 0;
+}
+.cargar:hover{
+	padding: 140px 150px;
+}
+
+.reporte:focus{
+	outline: 0;
+}
+.reporte:hover{
+	padding: 140px 150px;
+}

@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Entidades">
+  <DataContextMoniker Name="/EntidadesDataContext" />
+  <nestedChildShapes>
+    <classShape Id="87c1fd0e-f1ba-40fd-ab88-965fbca9ed35" absoluteBounds="0.5, 3, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/EntidadesDataContext/Ficha" />
+      <nestedChildShapes>
+        <elementListCompartment Id="27893c47-4a3b-4106-bf63-1c2f454b8275" absoluteBounds="0.51500000000000057, 3.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="27b58c1a-9612-4f90-a860-f8d7149d14b7" absoluteBounds="6.5, 0.5, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/EntidadesDataContext/Jugador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="faf0aefd-2bef-4fa9-bf82-11774ebf3610" absoluteBounds="6.5150000000000006, 0.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="889270d7-f3ea-4c4b-a4e0-7aa7e2ab3982" absoluteBounds="4.125, 0.875, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/EntidadesDataContext/Partida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87713af5-561a-4202-bc1b-953a0af37c7f" absoluteBounds="4.1400000000000006, 1.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d5adfcb-2f85-4217-8564-63d45338408f" absoluteBounds="5.375, 3.375, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/EntidadesDataContext/Partida_Jugador" />
+      <nestedChildShapes>
+        <elementListCompartment Id="80f8aefa-3ea6-4981-8457-c3bc05ba93f2" absoluteBounds="5.3900000000000006, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="55849d91-fdea-4e18-accf-65c5f330ded3" absoluteBounds="2.875, 3.125, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/EntidadesDataContext/Tablero" />
+      <nestedChildShapes>
+        <elementListCompartment Id="056589a9-6d7e-4c1a-bc70-0cd81112cb88" absoluteBounds="2.8900000000000006, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cf7b6a41-d138-412e-b395-d48229c93483" absoluteBounds="2.125, 5.5, 2, 1.3862939453125">
+      <DataClassMoniker Name="/EntidadesDataContext/Tablero_Ficha" />
+      <nestedChildShapes>
+        <elementListCompartment Id="baa8f606-334d-4c26-ba0d-12703be2cd61" absoluteBounds="2.1400000000000006, 5.96, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="56864e9c-a6c1-4c4d-a3ca-7122f0a2baea" absoluteBounds="1.625, 1, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/EntidadesDataContext/Tipo_partida" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d56555f7-6da2-4bf0-a203-8145e6871769" absoluteBounds="1.6400000000000006, 1.4600000000000009, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.75 : 2.2612939453125); (5.75 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EntidadesDataContext/Partida/Partida_Partida_Jugador" />
+      <nodes>
+        <classShapeMoniker Id="889270d7-f3ea-4c4b-a4e0-7aa7e2ab3982" />
+        <classShapeMoniker Id="2d5adfcb-2f85-4217-8564-63d45338408f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.9375 : 2.65549967447917); (6.9375 : 3.375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EntidadesDataContext/Jugador/Jugador_Partida_Jugador" />
+      <nodes>
+        <classShapeMoniker Id="27b58c1a-9612-4f90-a860-f8d7149d14b7" />
+        <classShapeMoniker Id="2d5adfcb-2f85-4217-8564-63d45338408f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 3.125); (4.5 : 2.2612939453125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EntidadesDataContext/Tablero/Tablero_Partida" />
+      <nodes>
+        <classShapeMoniker Id="55849d91-fdea-4e18-accf-65c5f330ded3" />
+        <classShapeMoniker Id="889270d7-f3ea-4c4b-a4e0-7aa7e2ab3982" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.3125 : 4.57859537760417); (2.3125 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EntidadesDataContext/Ficha/Ficha_Tablero_Ficha" />
+      <nodes>
+        <classShapeMoniker Id="87c1fd0e-f1ba-40fd-ab88-965fbca9ed35" />
+        <classShapeMoniker Id="cf7b6a41-d138-412e-b395-d48229c93483" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.5 : 4.5112939453125); (3.5 : 5.5)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/EntidadesDataContext/Tablero/Tablero_Tablero_Ficha" />
+      <nodes>
+        <classShapeMoniker Id="55849d91-fdea-4e18-accf-65c5f330ded3" />
+        <classShapeMoniker Id="cf7b6a41-d138-412e-b395-d48229c93483" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(3.625 : 1.59699625651042); (4.125 : 1.59699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/EntidadesDataContext/Tipo_partida/Tipo_partida_Partida" />
+      <nodes>
+        <classShapeMoniker Id="56864e9c-a6c1-4c4d-a3ca-7122f0a2baea" />
+        <classShapeMoniker Id="889270d7-f3ea-4c4b-a4e0-7aa7e2ab3982" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

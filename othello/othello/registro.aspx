@@ -22,7 +22,7 @@
 				<asp:TextBox ID="txt_apellido" runat="server" placeholder="Apellido" CssClass="input-field"></asp:TextBox>
                 <asp:TextBox ID="txt_user" runat="server" placeholder="Nombre de usuario" CssClass="input-field"></asp:TextBox>
 				<asp:TextBox ID="txt_contraseña" runat="server" placeholder="Contraseña" CssClass="input-field" TextMode="Password"></asp:TextBox>
-				<asp:TextBox ID="txt_fecha" runat="server" placeholder="Fecha" CssClass="input-field" TextMode="Date"></asp:TextBox>
+				<asp:TextBox ID="txt_fecha" runat="server" placeholder="Fecha" CssClass="input-field"></asp:TextBox>
 				<asp:DropDownList ID="drop_pais" runat="server"  CssClass="input-field">
 					<asp:ListItem>País</asp:ListItem>
                     <asp:ListItem>Afganistán</asp:ListItem>
@@ -221,7 +221,10 @@
 				<asp:TextBox ID="txt_correo" runat="server" placeholder="Correo" CssClass="input-field" TextMode="Email"></asp:TextBox>
 
 
-                <asp:Button ID="btn_registro" runat="server" CssClass="submit-btn" Text="Registrarse" />
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+
+
+                <asp:Button ID="btn_registro" runat="server" CssClass="submit-btn" Text="Registrarse" OnClick="btn_registro_Click" />
             </form>
 
 			

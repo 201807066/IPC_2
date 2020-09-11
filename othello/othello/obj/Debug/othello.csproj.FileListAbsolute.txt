@@ -56,3 +56,6 @@ D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Ot
 D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\obj\Debug\othello.csproj.CopyComplete
 D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\obj\Debug\othello.dll
 D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\obj\Debug\othello.pdb
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\obj\Debug\othello.csproj.CoreCompileInputs.cache
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\bin\Biblioteca.dll
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\othello\bin\Biblioteca.pdb

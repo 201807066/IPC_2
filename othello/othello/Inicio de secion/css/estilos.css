@@ -1,7 +1,9 @@
 *{
-	margin: 0;
 	padding: 0;
 	font-size: 13px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
 }
 
 /**Toda la ventana*/

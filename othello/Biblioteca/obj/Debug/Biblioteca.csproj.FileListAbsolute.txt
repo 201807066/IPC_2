@@ -1,0 +1,6 @@
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\bin\Debug\Biblioteca.dll
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\bin\Debug\Biblioteca.pdb
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\obj\Debug\Biblioteca.csprojAssemblyReference.cache
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\obj\Debug\Biblioteca.csproj.CoreCompileInputs.cache
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\obj\Debug\Biblioteca.dll
+D:\Documentos\Año_2020_Universidad\SegundoSemestre\IPC2\Laboratorio\Proyecto\Othello\othello\Biblioteca\obj\Debug\Biblioteca.pdb

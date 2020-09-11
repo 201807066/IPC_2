@@ -53,6 +53,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -69,10 +70,23 @@
   <ItemGroup>
     <Content Include="Inicio de secion\css\estilos.css" />
     <Content Include="Inicio de secion\img\fondo.jpg" />
-    <Content Include="Inicio de secion\index.html" />
+    <Content Include="menu\css\estilos.css" />
+    <Content Include="menu\img\archivo.png" />
+    <Content Include="menu\img\cargar.jpg" />
+    <Content Include="menu\img\cargar.png" />
+    <Content Include="menu\img\dos.png" />
+    <Content Include="menu\img\fichas.png" />
+    <Content Include="menu\img\fondo.jpg" />
+    <Content Include="menu\img\game_boy.png" />
+    <Content Include="menu\img\othello-otwarcia1.png" />
+    <Content Include="menu\img\reporte.png" />
+    <Content Include="menu\img\title.png" />
+    <Content Include="menu\img\torneo.png" />
+    <Content Include="menu\img\uno.png" />
     <Content Include="registro.aspx" />
     <Content Include="Web.config" />
     <Content Include="login.aspx" />
+    <Content Include="menu.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,6 +104,13 @@
     <Compile Include="registro.aspx.designer.cs">
       <DependentUpon>registro.aspx</DependentUpon>
     </Compile>
+    <Compile Include="menu.aspx.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menu.aspx.designer.cs">
+      <DependentUpon>menu.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -99,6 +120,12 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblioteca\Biblioteca.csproj">
+      <Project>{69163e8b-0817-472a-bc1d-7fbbb9ec082d}</Project>
+      <Name>Biblioteca</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
