@@ -78,15 +78,6 @@ namespace othello
         protected global::System.Web.UI.WebControls.Button btn_torneo;
 
         /// <summary>
-        /// Control btn_carga.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_carga;
-
-        /// <summary>
         /// Control btn_reporte.
         /// </summary>
         /// <remarks>

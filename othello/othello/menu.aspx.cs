@@ -28,5 +28,10 @@ namespace othello
             Session.Remove("user");
             Response.Redirect("login.aspx");
         }
+
+        protected void btn_uno_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("tablero.aspx");
+        }
     }
 }

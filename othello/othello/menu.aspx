@@ -15,13 +15,15 @@
      <asp:Button ID="btn_cerrar" runat="server" OnClick="btn_cerrar_Click" Text="Cerrar Sesión" CssClass="submit-btn" />
 	 <asp:Label ID="lb_bienvenida" runat="server" BorderStyle="None" Font-Bold="True" Font-Size="Large" ForeColor="#003300"></asp:Label>
     <asp:Image ID="Image1" runat="server" Cssclass="centro" src="menu/img/title.png" />
-&nbsp;<div class="main">
 
-        <asp:Button ID="btn_uno" runat="server" CssClass="uno" Text="" />
+
+    <div class="main">
+
+        <asp:Button ID="btn_uno" runat="server" CssClass="uno" Text="" OnClick="btn_uno_Click" />
         <asp:Button ID="btn_dos" runat="server" CssClass="dos" Text="" />
         <asp:Button ID="btn_torneo" runat="server" CssClass="torneo" Text="" />
-        <asp:Button ID="btn_carga" runat="server" CssClass="cargar" Text="" />
         <asp:Button ID="btn_reporte" runat="server" CssClass="reporte" Text="" />
+
 	</div>
 
     </form>

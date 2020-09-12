@@ -1,23 +1,25 @@
-*{
+* {
 	margin: 0;
 	padding: 0;
 	font-size: 13px;
 }
 
 
-.centro{
-	width: 25%;
+.centro {
+	width: 40%;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
 	padding: 10px;
 }
 
-.main{
+.main {
 	height: 100px;
+	padding-left: 160px;
+
 }
 
-body{
+body {
 	background-image: url(../img/fondo.jpg);
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -35,85 +37,72 @@ body{
 	border: 0px;
 	outline: none;
 	border-radius: 30px;
-
 }
 
-.uno{
+.uno {
 	background: url(../img/uno.png) center;
 	background-size: 100% 100%;
-	border:none;
-	cursor: pointer; 
-	padding: 150px 150px;	
+	border: none;
+	cursor: pointer;
+	padding: 150px 150px;
 	transition: .5s case;
 }
 
-.dos{
+.dos {
 	background: url(../img/dos.png) center;
 	background-size: 100% 100%;
-	border:none;
-	cursor: pointer; 
-	padding: 150px 150px;	
+	border: none;
+	cursor: pointer;
+	padding: 150px 150px;
 	transition: .5s case;
 }
 
-.torneo{
+.torneo {
 	background: url(../img/torneo.png) center;
 	background-size: 100% 100%;
-	border:none;
-	cursor: pointer; 
-	padding: 150px 150px;	
+	border: none;
+	cursor: pointer;
+	padding: 150px 150px;
 	transition: .5s case;
 }
 
-.cargar{
-	background: url(../img/cargar.png) center;
-	background-size: 100% 100%;
-	border:none;
-	cursor: pointer; 
-	padding: 150px 150px;
-	transition: .5s case;	
-}
-
-.reporte{
+.reporte {
 	background: url(../img/reporte.png) center;
 	background-size: 100% 100%;
-	border:none;
-	cursor: pointer; 
-	padding: 150px 150px;	
+	border: none;
+	cursor: pointer;
+	padding: 150px 150px;
 	transition: .5s case;
 }
 
-.uno:focus{
+.uno:focus {
 	outline: 0;
 }
-.uno:hover{
+
+.uno:hover {
 	padding: 140px 150px;
 }
 
-.dos:focus{
+.dos:focus {
 	outline: 0;
 }
-.dos:hover{
+
+.dos:hover {
 	padding: 140px 150px;
 }
 
-.torneo:focus{
+.torneo:focus {
 	outline: 0;
 }
-.torneo:hover{
+
+.torneo:hover {
 	padding: 140px 150px;
 }
 
-.cargar:focus{
+.reporte:focus {
 	outline: 0;
-}
-.cargar:hover{
-	padding: 140px 150px;
 }
 
-.reporte:focus{
-	outline: 0;
-}
-.reporte:hover{
+.reporte:hover {
 	padding: 140px 150px;
 }

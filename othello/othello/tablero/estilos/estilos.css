@@ -1,0 +1,124 @@
+﻿.main {
+    height: 100px;
+}
+
+body {
+    background-image: url('../img/fondo.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #00695c;
+}
+
+.centro {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+}
+
+.submit-btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: ruby;
+    margin: auto;
+    background: linear-gradient(to right, rgba(0, 150, 136, 0.7), rgba(0, 188, 212, 0.7));
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+}
+
+.btn_menu {
+    background: url(../img/home.png) center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    display: ruby;
+    padding: 10px 20px;
+}
+
+#main 
+{
+    width: 32%;
+    padding-left: 35%;
+}
+
+.bloque{
+    border: 1px solid #000000;
+    width: 50px;
+    height: 50px;
+}
+
+.color {
+    background-color: #ff9800;
+}
+
+.negro {
+    background-color: #000000;
+}
+
+.verde {
+    background-color: #004d40;
+}
+
+.flotar{
+    float:left;
+}
+
+.cargar {
+    background: url(../img/cargar.png) center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.cargar:focus{
+    outline:0;
+}
+
+.guardar {
+    background: url(../img/guardar.png) center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.guardar:focus{
+    outline:0;
+}
+
+.limpiar {
+    background: url(../img/limpiar.png) center;
+    background-size: 100% 100%;
+    border: none;
+    cursor: pointer;
+    padding: 20px 20px;
+}
+
+.limpiar:focus{
+    outline:0;
+}
+
+footer{
+    max-height: 500px;
+    min-height: 100px;
+    margin: 0 auto;
+}
+
+.btn_redondo {
+    width: 50px;
+    height: 50px;
+    background-color: #ff9800;
+    position: center;
+    border-radius: 30px;
+    border-style: none;
+    cursor: pointer;
+}
+
+.btn_redondo:focus {
+    outline: 0;
+}
