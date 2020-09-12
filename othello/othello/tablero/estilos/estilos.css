@@ -122,3 +122,14 @@ footer{
 .btn_redondo:focus {
     outline: 0;
 }
+
+.cargar_archivo{
+    padding: 10px 20px;
+    cursor: pointer;
+    display: ruby;
+    margin: auto;
+    background: linear-gradient(to right, rgba(0, 150, 136, 0.7), rgba(0, 188, 212, 0.7));
+    border: 0px;
+    outline: none;
+    border-radius: 30px;
+}

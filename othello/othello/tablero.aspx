@@ -13,7 +13,9 @@
 		<div>
 			<asp:Image ID="Image1" runat="server" Cssclass="centro" src="menu/img/title.png" />
 			<asp:Button ID="btn_menu" runat="server" CssClass="btn_menu" OnClick="btn_menu_Click" Text="" />
+			<asp:Label ID="mensaje" runat="server" Font-Bold="True" Font-Overline="False" Font-Size="Large" ForeColor="#003300"></asp:Label>
 		</div>
+
 
 		<div id="main">
 			<div class="bloque negro flotar"></div>
@@ -113,10 +115,11 @@
 			<div class="bloque color flotar"><asp:Button ID="F_8" runat="server" CssClass="btn_redondo" OnClick="F_8_Click" /></div>
 			<div class="bloque color flotar"><asp:Button ID="G_8" runat="server" CssClass="btn_redondo" OnClick="G_8_Click" /></div>
 			<div class="bloque color flotar"><asp:Button ID="H_8" runat="server" CssClass="btn_redondo" OnClick="H_8_Click" /></div>
-			
-			<asp:Button ID="btn_cargar" runat="server" Text="" CssClass="cargar" />
-            <asp:Button ID="btn_guardar" runat="server" Text="" CssClass="guardar" />
-            <asp:Button ID="btn_limpiar" runat="server" Text="" CssClass="limpiar" />
+
+
+			CARGAR XML: <asp:FileUpload ID="fUpload" runat="server"  type="file" onchange="this.form.submit();" Width="216px"  Height="22px"  />
+            <asp:Button ID="btn_guardar" runat="server" Text="" CssClass="guardar" OnClick="btn_guardar_Click" />
+            <asp:Button ID="btn_limpiar" runat="server" Text="" CssClass="limpiar" OnClick="btn_limpiar_Click" />
 		</div>
 
 

@@ -42,6 +42,15 @@ namespace othello
         protected global::System.Web.UI.WebControls.Button btn_menu;
 
         /// <summary>
+        /// Control mensaje.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label mensaje;
+
+        /// <summary>
         /// Control A_1.
         /// </summary>
         /// <remarks>
@@ -618,13 +627,13 @@ namespace othello
         protected global::System.Web.UI.WebControls.Button H_8;
 
         /// <summary>
-        /// Control btn_cargar.
+        /// Control fUpload.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_cargar;
+        protected global::System.Web.UI.WebControls.FileUpload fUpload;
 
         /// <summary>
         /// Control btn_guardar.
